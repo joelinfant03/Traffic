@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Monitoring System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Traffic Monitoring</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="alternate.html">Alternate Routes</a>
+            <a href="settings.html">Settings</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="traffic-info">
+            <h2>Real-Time Traffic Monitoring</h2>
+            
+            <div class="traffic-status">
+                <h3>Vehicle Count</h3>
+                <div class="counter">
+                    <button onclick="decrement()">-</button>
+                    <span id="vehicleCount">0</span>
+                    <button onclick="increment()">+</button>
+                </div>
+            </div>
+            
+            <div class="traffic-signal-section">
+                <h3>Traffic Light Status</h3>
+                <div id="signal" class="green"></div>
+                <p>Current Traffic Density: <span id="trafficDensity">Low</span></p>
+            </div>
+
+            <div class="travel-info">
+                <h3>Travel Insights</h3>
+                <p>Estimated Time to Cross: <span id="timeToCross">2-3 min</span></p>
+                <p>Recommended Speed: <span id="recommendedSpeed">Normal</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Traffic Management System</p>
+        <small>Real-time traffic data for safer journeys</small>
+    </footer>
+
+    <script src="scripts/traffic.js"></script>
+</body>
+</html>
